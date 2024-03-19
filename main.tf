@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "RHEL-Server-HTTPD" {
-  count         = 1
+  count         = 2
   ami           = "ami-0fe630eb857a6ec83"
   instance_type = "t2.medium"
   key_name      = "macbook"
